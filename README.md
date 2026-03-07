@@ -12,6 +12,14 @@ OrbisTTY is a simple terminal-style text renderer for **PlayStation 4 homebrew**
 - Double buffered rendering
 - Lightweight and easy to integrate
 
+## Required OpenOrbis libraries to link
+ - -lc
+ - -lkernel
+ - -lc++
+ - -lSceVideoOut
+ - -lSceFreeType
+ - -lSceSysmodule
+
 ## Example
 
 ```cpp
