@@ -39,4 +39,6 @@ int main() {
 ```
 
 ## OpenOrbis PS4 Toolchain
+OrbisTTY is an third-party additional library to the OpenOrbis PS4 Toolchain.
+
 - https://github.com/OpenOrbis/OpenOrbis-PS4-Toolchain
