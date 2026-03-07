@@ -1,5 +1,3 @@
-@echo off
-
 SETLOCAL EnableDelayedExpansion
 
 Rem Package information
