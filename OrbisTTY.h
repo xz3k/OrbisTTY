@@ -65,22 +65,22 @@ public:
 	OrbisTTY_2D(int pixel_depth);
 	~OrbisTTY_2D(void);
 
-	bool init(size_t mem_size, int num_frame_buffers);
+	bool init                    (size_t mem_size, int num_frame_buffers);
 	
-	void set_active_frame_buffer(int index);
-	void submit_flip(int frame_id);
+	void set_active_frame_buffer (int index);
+	void submit_flip             (int frame_id);
 
-	void frame_wait(int frame_id);
-	void frame_buffer_swap(void);
-	void frame_buffer_clear(void);
-	void frame_buffer_fill(struct OrbisTTY_Color color);
+	void frame_wait              (int frame_id);
+	void frame_buffer_swap       (void);
+	void frame_buffer_clear      (void);
+	void frame_buffer_fill       (struct OrbisTTY_Color color);
 
-	void draw_pixel(int x, int y, struct OrbisTTY_Color color);
-	void draw_rectangle(int x, int y, int width, int height, struct OrbisTTY_Color color);
+	void draw_pixel              (int x, int y, struct OrbisTTY_Color color);
+	void draw_rectangle          (int x, int y, int width, int height, struct OrbisTTY_Color color);
 
-	bool use_font(const char* font_path);
-	void draw_text(char* text, int start_x, int start_y, struct OrbisTTY_Color bg_color, struct OrbisTTY_Color fg_color);
-	void draw_textf(int start_x, int start_y, struct OrbisTTY_Color bgColor, struct OrbisTTY_Color fg_color, char* fmt, ...);
+	bool use_font                (const char* font_path);
+	void draw_text               (char* text, int start_x, int start_y, struct OrbisTTY_Color bg_color, struct OrbisTTY_Color fg_color);
+	void draw_textf              (int start_x, int start_y, struct OrbisTTY_Color bgColor, struct OrbisTTY_Color fg_color, char* fmt, ...);
 };
 
 namespace OrbisTTY {
@@ -89,11 +89,12 @@ namespace OrbisTTY {
 	static int line_index;
 	static int frame_id;
 
-	bool init          (const char* font_path);
-	bool set_font      (const char* font_path);
-	void move_lines_up (void);
-	int  get_y_offset  (int line);
-	void orbis_printf  (const char* fmt, ...);
+	bool init                    (const char* font_path);
+	bool set_font                (const char* font_path);
+	void move_lines_up           (void);
+	int  get_y_offset            (int line);
+	void orbis_printf            (const char* fmt, ...);
 }
+
 
 #endif
