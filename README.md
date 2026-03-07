@@ -2,7 +2,7 @@
 
 OrbisTTY is a simple terminal-style text renderer for **PlayStation 4 homebrew** that provides a `printf`-like interface using **sceVideoOut** and **FreeType**.
 
-**Note:** Fonts that were tested with OrbisTTY are **tested-fonts/**
+**Note:** Fonts that were tested with OrbisTTY are stored in **tested-fonts/**
 
 ## Features
 
